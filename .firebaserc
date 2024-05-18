@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "nyari-tabor"
+  },
+  "targets": {
+    "nyari-tabor": {
+      "hosting": {
+        "nyari-tabor": [
+          "nyari-tabor"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

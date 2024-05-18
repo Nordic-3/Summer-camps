@@ -1,0 +1,22 @@
+mat-card{
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 0 2px 25px black;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10%;
+}
+
+mat-card-title{
+    font-size: 30px;
+}
+
+mat-card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

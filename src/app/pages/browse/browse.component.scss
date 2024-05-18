@@ -1,0 +1,21 @@
+mat-expansion-panel{
+    margin: 2% 0 2% 0;
+    width: 50%;
+}
+
+.msg{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+p{
+    font-size: 17px;
+}
+
+@media screen and (max-width: 1000px){
+    mat-expansion-panel{
+        width: 90%;
+        margin: 2% 0 2% 0;
+    } 
+}

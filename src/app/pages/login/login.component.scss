@@ -1,0 +1,22 @@
+span{
+    margin: 2% 0 2% 0;
+    padding-left: 2%;
+}
+
+mat-form-field {
+    margin-top: 1%;
+    width: 70%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+@media  screen and (max-width: 952px) {
+    .buttons{
+        display: grid;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "site": "nyari-tabor-a7a9c",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    
+    "headers": [],
+    "trailingSlash": false,
+    "public": "dist/nyari-tabor/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "channels": {
+      "nyari-tabor": {
+        "public": "nyari-tabor"
+      }
+    }
+  }
+}

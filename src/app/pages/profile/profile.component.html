@@ -1,0 +1,29 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Profilom</mat-card-title>
+            <mat-icon>badge</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-grid-list cols="2" rowHeight="4:1">
+                <mat-grid-tile >Név:</mat-grid-tile>
+                <mat-grid-tile style="overflow-x: auto;">{{ user.name }}</mat-grid-tile>
+                <mat-grid-tile>Email:</mat-grid-tile>
+                <mat-grid-tile style="overflow-x: auto">{{ user.email }}</mat-grid-tile>
+                <mat-grid-tile>Név módosítás: </mat-grid-tile>
+                <mat-grid-tile>
+                    <button mat-raised-button [routerLink]="'/namemod'" color="primary">
+                        Név változtatás
+                    </button>
+                </mat-grid-tile>
+                <mat-grid-tile>Jelentkezéseim: </mat-grid-tile>
+                <mat-grid-tile>
+                    <button mat-raised-button [routerLink]="'/apply'" color="primary">
+                        Jelentkezések
+                    </button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card-content>
+    </mat-card>
+</div>

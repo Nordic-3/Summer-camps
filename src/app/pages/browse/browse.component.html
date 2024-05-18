@@ -1,0 +1,16 @@
+<div id="main_container">
+    <mat-expansion-panel [expanded]="expand(camp.id)" *ngFor="let camp of allCamps">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p>{{ camp.nev }}</p>
+          </mat-panel-title>
+          <mat-panel-description>
+            <p>{{ camp.ar | curr }}</p>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>{{ camp.leiras }}</p>
+        <button mat-raised-button *ngIf="localUser != null" color="primary" (click)="apply(camp.id)">Jelentkezés</button>
+        <p *ngIf="localUser == null" class="error">Regisztrálj a jelentkezéshez!</p>
+        <p class="msg" *ngIf="success.done && camp.id == applied.CampId">{{ success.msg }}</p>
+      </mat-expansion-panel>
+</div>

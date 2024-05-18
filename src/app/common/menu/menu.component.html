@@ -1,0 +1,22 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/main">
+        <mat-icon>grid_view</mat-icon>
+        <span>Főoldal</span>
+    </a>   
+    <a mat-list-item routerLink="/browse">
+        <mat-icon>search</mat-icon>
+        <span>Tábor keresése</span>
+    </a>
+    <a mat-list-item routerLink="/profile" *ngIf="user">
+        <mat-icon>person</mat-icon>
+        <span>Profilom<br>jelentkezéseim</span>
+    </a>
+    <a mat-list-item routerLink="/login" *ngIf="!user">
+        <mat-icon>Login</mat-icon>
+        <span>Bejelentkezés</span>
+    </a>
+    <a mat-list-item routerLink="/login" *ngIf="user"  (click)="logout(true)">
+        <mat-icon>Logout</mat-icon>
+        <span>Kijelentkezés</span>
+    </a>
+</mat-nav-list>

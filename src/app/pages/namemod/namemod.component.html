@@ -1,0 +1,11 @@
+<div id="main_container">
+    <form [formGroup]="modifyForm" (ngSubmit)="nameModify()">
+        <mat-form-field>
+            <mat-label for="newName">Új név </mat-label><input matInput type="text"
+                formControlName="newName" />
+        </mat-form-field>
+        <div>
+            <span><button mat-raised-button type="submit" color="primary">Módosítás</button></span>
+        </div>
+    </form>
+</div>

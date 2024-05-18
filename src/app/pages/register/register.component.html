@@ -1,0 +1,24 @@
+<div id="main_container">
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <mat-form-field>
+            <mat-label for="email">Email cím:</mat-label><input matInput type="text"
+                formControlName="email" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="name">Név:</mat-label><input matInput type="text" formControlName="name" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="psw">Jelszó:</mat-label><input matInput type="password" formControlName="psw" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="rpsw">Jelszó újra:</mat-label><input matInput type="password" formControlName="rpsw" />
+        </mat-form-field>
+
+        <div *ngIf="success === false" class="error">Sikertelen regisztráció</div>
+
+        <div>
+            <span><button mat-raised-button type="submit" color="primary">Regisztráció</button></span>
+            <span><button mat-raised-button [routerLink]="'/login'" color="primary">Bejelentkezés</button></span>
+        </div>
+    </form>
+</div>
