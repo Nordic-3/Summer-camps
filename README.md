@@ -1,5 +1,5 @@
 # NyariTabor
-
+Hosting URL: https://nyari-tabor-a7a9c.web.app
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
